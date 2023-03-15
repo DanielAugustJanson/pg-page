@@ -1,6 +1,6 @@
 body{
     background: rgb(57,57,62);
-    background: linear-gradient(180deg, rgba(57,57,62,1) 0%, rgba(46,46,63,1) 65%, rgba(62,62,75,1) 100%);
+    background: linear-gradient(180deg, rgba(71,46,65,1) 0%, rgba(46,46,63,1) 57%, rgba(89,89,103,1) 100%);
 }
 
 body h1,h2,h3,h4,h5,p{
@@ -24,7 +24,7 @@ body h1,h2,h3,h4,h5,p{
 
 .logo h1{
     font-weight: 500;
-    font-size: 15vh;
+    font-size: 13vh;
     position: relative;
     bottom: 5vh;
     border-bottom: 2px solid rgb(255, 255, 255);
@@ -58,24 +58,72 @@ body h1,h2,h3,h4,h5,p{
 }
 .discord{
     display: flex;
-    justify-content: space-around;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding: 10vh;
+
+    justify-content: center;
+
 }
 .discord p{
     font-size: 5vh;
-    padding-left: 15vh;
-    align-items: center;
+    width: 40%;
+    padding-left: 5%;
 }
 
 .games{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.games h3{
+    font-size: 5rem;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    position: relative;
+    bottom: 4vh;
+    
+    
 }
 .game-row{
     display: flex;
     justify-content: space-around;
 }
 .game-row img{
-    width: 10vh;
+    max-height: 15vh;
+    height: auto;
+    width: auto;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.bottom p{
+    color: beige;
+    font-weight: 100;
+    padding: 5vh;
+}
+
+@media only screen and (max-width:900px) {
+    .discord{
+        display: flex;
+        margin: 3rem;
+        padding: 1rem;
+        justify-content: center;
+    
+    }
+    
+    .discord p{
+        font-size: 1.5rem;
+        padding-left: 5%;
+    }
+    .game-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .game-row img{
+        max-width: 80%;
+        height: auto;
+        width: auto;
+    }
 }
